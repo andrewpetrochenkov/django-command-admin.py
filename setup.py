@@ -1,12 +1,9 @@
-from setuptools import setup
+import setuptools
 
-setup(
+# PRODUCTION setup.py: name, version, install_requires, packages only
+setuptools.setup(
     name='django-command-admin',
-    version='2021.6.21',
-    packages=[
-        'django_command_admin',
-        'django_command_admin.admin',
-        'django_command_admin.migrations',
-        'django_command_admin.models'
-    ]
+    version='1.0.0',
+    install_requires=open('requirements.txt').read().splitlines(),
+    packages=setuptools.find_packages()
 )

@@ -1,1 +1,0 @@
-run Django management commands from the Django admin interface
